@@ -192,3 +192,71 @@ body{
         color: rgb(0, 0, 0);
     }
     
+    /* Contact us page */
+
+    form {
+        display: flexbox;
+        height: auto;
+        width: auto;
+        position: relative;
+        top: 4em;
+        margin: 1em;
+        border: 1px solid black;
+        padding: 1em;
+        border-radius: 5px;
+    }
+
+    .formContent {
+        margin-bottom: 3em;
+    }
+
+    .formContent p {
+        position: relative;
+        top: 1em;
+    }
+
+   
+
+    form p {
+        text-align: left;
+    }
+
+    .contact {
+        position: relative;
+        top: 1em;
+        
+    }
+
+    .radio {
+        position: relative;
+        top: 0.5em;
+        display: inline-flex;
+    }
+
+    .radio label{
+        margin-right: 0.6em;
+    }
+
+    .radio input {
+        margin-right: 1.5em;
+    }
+
+    .choices {
+        position: relative;
+        top: 1.5em;
+    }
+
+   
+
+    .message {
+        position: relative;
+        top: 2.5em;
+    }
+
+    .submit {
+        position: relative;
+        top: 4.5em;
+
+        
+    }
+
