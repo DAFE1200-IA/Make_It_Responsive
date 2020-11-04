@@ -194,6 +194,7 @@ body{
     
     /* Contact us page */
 
+    /* Mobile first */
     form {
         display: flexbox;
         height: auto;
@@ -215,16 +216,13 @@ body{
         top: 1em;
     }
 
-   
-
     form p {
         text-align: left;
     }
 
     .contact {
         position: relative;
-        top: 1em;
-        
+        top: 1em;  
     }
 
     .radio {
@@ -246,8 +244,6 @@ body{
         top: 1.5em;
     }
 
-   
-
     .message {
         position: relative;
         top: 2.5em;
@@ -255,8 +251,6 @@ body{
 
     .submit {
         position: relative;
-        top: 4.5em;
-
-        
+        top: 4.5em;        
     }
 
