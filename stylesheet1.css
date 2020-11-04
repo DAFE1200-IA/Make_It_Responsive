@@ -1,0 +1,198 @@
+<<<<<<< HEAD
+body{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    }
+    
+    /*NAVIGATION BAR*/
+    /* Teaching source: Powell, K. (May 16th 2018). Create a responsive navigation with no JS! [video].
+    Found at https://www.youtube.com/watch?v=8QKOaTYvYUA&feature=emb_logo */
+    
+    header{
+        background-color: white;
+        text-align: center;
+        position: fixed;
+        z-index: 999;
+        width: 100%;
+        top: 0;
+    }
+    
+    .logo{
+        margin: 0;
+        padding: 0;
+        font-size: 1em;
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 0.2em;
+        text-align: center;
+        background-color:white;
+        color: black;
+    }
+    
+    .hamburger{
+        position: absolute !important;
+        top: -9999px !important;
+        left: -9999px !important;
+    }
+    
+    .hamburger:focus ~ .hamburger-label{
+        outline: 1px solid white;
+    }
+    
+    .hamburger-label{
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-left: 1.5em;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .hamburger-label span,
+    .hamburger-label span::before,
+    .hamburger-label span::after{
+        display: block;
+        background-color: black;
+        height: 1.8px;
+        width: 2em;
+        border-radius: 2px;
+        position: relative;
+    }
+    
+    .hamburger-label span::before,
+    .hamburger-label span::after{
+        content: '';
+        position: absolute;
+    }
+    
+    .hamburger-label span::before{
+        bottom: 8px;
+    }
+    
+    .hamburger-label span::after{
+        top: 8px;
+    }
+    
+    nav{
+        position: absolute;
+        text-align: left;
+        top: 100%;
+        left: 0;
+        background-color: white;
+        width: 100%;
+        transform: scale(1,0);
+        transform-origin: top;
+        transition: transform 400ms ease-in-out;
+    }
+    
+    nav ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    
+    nav li{
+        margin-bottom: 1em;
+        margin-left: 1em;
+        padding: 0.2em;
+    }
+    
+    nav a{
+        color: black;
+        text-decoration: none;
+        font-size: 1em;
+        font-family: Arial, sans-serif;
+        opacity: 0;
+        transition: opacity 150ms ease-in-out;
+    }
+    
+    nav a:hover{
+        color: rgba(137, 137, 250,1);
+        background-color: white;
+    }
+    
+    .hamburger:checked ~ nav{
+        transform: scale(1,1);
+    }
+    
+    .hamburger:checked ~ nav a{
+        opacity: 1;
+        transition: opacity 250ms ease-in-out 250ms;;
+    }
+    
+    /*CONTENT INDEX*/
+    .indexPhoto{
+        margin-top: 3em;
+    }
+    
+    /* Information Section */
+    #indexInfo {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 1em;
+        align-content: center;
+        margin-left: 2em;
+        font-size: 1em;
+        letter-spacing: 1px; 
+        justify-content: center;  
+    }
+    
+    #indexInfo .insideIndexInfo {
+        background-color: rgba(255, 255, 255, 0);
+        border-radius: 0.2em;
+        position: relative;
+        margin: 2em;
+        width: 20em;
+        height: 15em;
+        overflow: hidden;
+    }
+    
+    #indexInfo .insideIndexInfo  h3 a {
+        display: inline-block;
+        background-color: rgb(115, 176, 209);
+        color: rgb(255, 255, 255);
+        width: 100%;
+        text-decoration: none;
+        padding: 1.5em 0.1em;
+        text-align: center;
+        margin: auto;
+        font-weight: 400;
+        font-size: 1em;
+        text-transform: uppercase;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    
+    #indexInfo .insideIndexInfo  p {
+        display: inline-block;
+        position: relative;
+        bottom: 1em;
+        font-size: 0.90em;
+        font-weight: 200;
+        padding: 0em 2em;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    #indexInfo .insideIndexInfo  a {
+        display: inline-block;
+        position: relative;
+        bottom: 3;
+        padding: 0em 2em;
+        font-weight: 500;
+        font-size: 0.9em;
+        color: black;   
+        text-decoration: none;
+        font-weight: 700;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    #indexInfo a:hover {
+        color: rgb(0, 0, 0);
+    }
+    
+    
+=======
+>>>>>>> 2f1ea7bf307cca0a23f760b014e53362f8d5b37a
