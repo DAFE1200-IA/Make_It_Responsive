@@ -1,3 +1,6 @@
+body{
+	font-family: Source Sans Pro;
+}
 #container{
 	width: 90%;
 	margin: auto;
@@ -10,40 +13,66 @@
 	margin-right: 20px;
 }
 .box_top{
-	background-color: #C9C9C9;
+	background-color: rgb(115, 176, 209);
+	color: white;
 	text-align: center;
 }
 .box_top h2{
 	margin-top: 0;
+	font-weight: 70;
 }
 .box_top p{
 	padding-bottom: 10px;
 	margin:0;
+
 }
 
 .content{
 	overflow: hidden;
 	max-height: 0;
 	transition: max-height 0.2s ease-out;
-	background-color: #EEEEEE;
+	background-color: #EBF3FF;
 }
 .box_bot{
-	background-color: #DCDCDC;
+	background-color: #EBF3FF;
+	text-align: center;
 }
-.box_bot button{
-	margin-left: 20px;
+.box_bot a{
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 .month{
 	margin-bottom: 50px;
 
 }
 
+
+h1{
+	color: #062636;
+}
+
 #month_nav{
+	width: 70%;
+	margin: auto;
 	position: fixed;
+	left:50%;
+	margin-left: -37.5%;
+}
+
+#month_nav ul{
+	display: fixed;
 }
 
 #month_nav li{
 	display: inline;
+
+}
+
+#month_nav a {
+	color: #062636;
+	font-weight: bold;
+	font-size: 26px;
+	padding-right: 30px;
 }
 
 .flex{
