@@ -33,7 +33,7 @@ footer{
         letter-spacing: 0.2em;
         text-align: center;
         background-color:white;
-        color: black;
+        color: rgb(50, 84, 114);
     }
     
     .hamburger{
@@ -242,7 +242,7 @@ footer{
 
     form h1 {
         font-weight: 100;
-        color: rgb(50, 84, 114)
+        color: rgb(50, 84, 114);
     }
 
     form p {
