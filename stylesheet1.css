@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 body{
     margin: 0;
     padding: 0;
@@ -203,6 +202,82 @@ body{
 
     
     
-    
-=======
->>>>>>> 2f1ea7bf307cca0a23f760b014e53362f8d5b37a
+    /* Contact us page */
+
+    /* Mobile first */
+    form {
+        display: flexbox;
+        height: auto;
+        width: auto;
+        position: relative;
+        top: 4em;
+        margin: 1em;
+        border: 1px solid black;
+        padding: 1em;
+        border-radius: 5px;
+    }
+
+    form p {
+        text-align: left;
+    }
+
+    .formContent {
+        margin-bottom: 4em;
+    }
+
+    .formContent p {
+        position: relative;
+        bottom: 1em;
+    }
+
+    .formContent select {
+        margin: 1.3em 0em;
+    }
+
+    .formContent input {
+        margin: 1em 0em;  
+    }
+
+    .formContent textarea {
+        margin: 1em 0em;
+    }
+
+    .radio {
+        position: relative;
+        bottom: 1.5em;
+        display: inline-flex;
+    }
+
+    .radio label{
+        position: relative;
+        top: 0.5em;
+        margin-right: 0.6em;
+    }
+
+    .radio input {
+        margin-right: 2em;
+    }
+
+    .choices {
+        position: relative;
+        bottom: 1em;
+    }
+
+    .message
+
+    .submit {
+        position: relative;
+        left: 10em;       
+    }
+
+    /* SubmitPage */
+    main {
+        position: relative;
+        top: 5em;
+        margin: 1em;
+        border: solid 1px black;
+        border-radius: 5px;
+        padding: 0.5em;
+        text-align: center;
+    }
+
