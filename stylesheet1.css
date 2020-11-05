@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     background-color: white;
+    font-family: Source Sans Pro, sans-serif;
     }
     
     /*NAVIGATION BAR*/
@@ -205,16 +206,25 @@ body{
     /* Contact us page */
 
     /* Mobile first */
+    .background{
+        background-color: rgba(115, 176, 209, 1);
+    }
+
     form {
+        background-color: white;
         display: flexbox;
         height: auto;
         width: auto;
         position: relative;
-        top: 4em;
+        top: 5em;
         margin: 1em;
-        border: 1px solid black;
         padding: 1em;
         border-radius: 5px;
+    }
+
+    form h1 {
+        font-weight: 100;
+        color: rgb(50, 84, 114)
     }
 
     form p {
