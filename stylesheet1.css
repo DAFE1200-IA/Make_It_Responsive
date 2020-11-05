@@ -141,7 +141,7 @@ body{
     }
     
     #indexInfo .insideIndexInfo {
-        background-color: rgba(255, 255, 255, 0);
+        background-color: rgb(235, 243, 255);
         border-radius: 0.2em;
         position: relative;
         margin: 2em;
