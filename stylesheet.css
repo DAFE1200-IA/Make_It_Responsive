@@ -409,6 +409,13 @@ Found at 05 11 2020  https://stackoverflow.com/questions/6169666/how-to-resize-a
 }
 
 /* SCHEDULE PAGE */
+    #container{
+        width: 80%;
+        margin: auto;
+        padding-top: 80px;
+        margin-bottom: 80px;
+    }
+
     .box{
         width: 400px;
         /*background-color: #EEEEEE;*/
@@ -471,6 +478,9 @@ Found at 05 11 2020  https://stackoverflow.com/questions/6169666/how-to-resize-a
     .month{
         margin-bottom: 30px;
     }
+    .month_name{
+        text-align: center;
+    }
 
     h1#November{
         color: #062636;
@@ -481,6 +491,7 @@ Found at 05 11 2020  https://stackoverflow.com/questions/6169666/how-to-resize-a
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
     }
     .signUpBack{
         background-color: rgba(115, 176, 209, 1);
@@ -542,7 +553,7 @@ Found at 05 11 2020  https://stackoverflow.com/questions/6169666/how-to-resize-a
     @media screen and (max-width: 300px){
         /*Navigation bar*/
         .logo{
-            width: 48%;
+            width: 40%;
         }
         
         /*Home (Index) page*/
