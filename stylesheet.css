@@ -242,7 +242,6 @@ Found at 05 11 2020  https://stackoverflow.com/questions/6169666/how-to-resize-a
 
 .aboutTitleBox{
     margin-top: 4em;
-    background-color: white;
 }
 
 .aboutText{
@@ -265,8 +264,10 @@ Found at 05 11 2020  https://stackoverflow.com/questions/6169666/how-to-resize-a
     color: rgba(50, 84, 114, 0.8);
 }
 
-.aboutText p{
-    padding: 1em;
+.aboutTitleBox p{
+    padding: 1.5em;
+    margin-top: 1em;
+    background-color: white;
 }
 
 .photo{
@@ -343,7 +344,6 @@ Found at 05 11 2020  https://stackoverflow.com/questions/6169666/how-to-resize-a
     top: 0.5em; 
 }
 
-        
 .formContent input[type=text]{
     position: relative;
     padding: 0.5em;
@@ -477,34 +477,6 @@ Found at 05 11 2020  https://stackoverflow.com/questions/6169666/how-to-resize-a
         margin-top: 50px;
     }
 
-    #month_nav{
-        width: 100%;
-        margin: auto;
-        position: fixed;
-        background-color: whitesmoke;
-        padding-bottom: 5px;
-        padding-top: 30px;
-    }
-    ul#month_nav {
-        padding-left: 0;
-    }
-
-    #month_nav li{
-        display: inline;
-    }
-
-    #month_nav a {
-        color: #062636;
-        font-weight: bold;
-        font-size: 26px;
-        padding-right: 30px;
-    }
-
-    .monthPos{
-    position: relative;
-    top:-140px;
-    }
-
     .flex{
         display: flex;
         flex-direction: row;
@@ -566,7 +538,7 @@ Found at 05 11 2020  https://stackoverflow.com/questions/6169666/how-to-resize-a
         font-size: 1em;
     }
 
-        /*MAKE IT RESPONSIVE*/
+    /*MAKE IT RESPONSIVE*/
     @media screen and (max-width: 300px){
         /*Navigation bar*/
         .logo{
