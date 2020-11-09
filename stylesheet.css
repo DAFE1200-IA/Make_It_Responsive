@@ -27,24 +27,14 @@ footer{
     
     .logo{
         margin: 0;
-        padding: 0;
+        /*padding: 0;
         font-size: 1em;
         font-family: Arial, Helvetica, sans-serif;
         letter-spacing: 0.2em;
         text-align: center;
         background-color:white;
-        color: rgb(50, 84, 114);
+        color: rgb(50, 84, 114); */
         padding-top: 0.3em;
-    }
-
-    .logo img{
-        width: 5%;
-    }
-
-    @media screen and (max-width: 300px){
-        .logo img{
-            width: 10%;
-        }
     }
 
     .hamburger{
@@ -150,7 +140,7 @@ footer{
 
     /*CONTENT INDEX*/
     .indexPhoto{
-        margin-top: 5em;
+        margin-top: 1.5em;
     }
 
     #indexInfo{
