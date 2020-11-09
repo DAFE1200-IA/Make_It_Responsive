@@ -11,11 +11,11 @@ footer{
     bottom: 0;
     font-family: Source Sans Pro, sans-serif;
     }
-    
+
 /*NAVIGATION BAR*/
 /* Teaching source: Powell, K. (May 16th 2018). Create a responsive navigation with no JS! [video].
    Found at https://www.youtube.com/watch?v=8QKOaTYvYUA&feature=emb_logo */
-    
+
     header{
         background-color: white;
         text-align: center;
@@ -24,17 +24,14 @@ footer{
         width: 100%;
         top: 0;
     }
-    
+
     .logo{
-        margin: 0;
-        /*padding: 0;
-        font-size: 1em;
-        font-family: Arial, Helvetica, sans-serif;
-        letter-spacing: 0.2em;
+        position: relative;
+        display: inline-block;
         text-align: center;
-        background-color:white;
-        color: rgb(50, 84, 114); */
+        margin: 0;
         padding-top: 0.3em;
+        width: 40%;
     }
 
     .hamburger{
@@ -42,11 +39,11 @@ footer{
         top: -9999px !important;
         left: -9999px !important;
     }
-    
+
     .hamburger:focus ~ .hamburger-label{
         outline: 0.4px solid white;
     }
-    
+
     .hamburger-label{
         position: absolute;
         top: 0;
@@ -57,7 +54,7 @@ footer{
         align-items: center;
         cursor: pointer;
     }
-    
+
     .hamburger-label span,
     .hamburger-label span::before,
     .hamburger-label span::after{
@@ -68,21 +65,21 @@ footer{
         border-radius: 2px;
         position: relative;
     }
-    
+
     .hamburger-label span::before,
     .hamburger-label span::after{
         content: '';
         position: absolute;
     }
-    
+
     .hamburger-label span::before{
         bottom: 8px;
     }
-    
+
     .hamburger-label span::after{
         top: 8px;
     }
-    
+
     nav{
         position: absolute;
         text-align: left;
@@ -94,19 +91,19 @@ footer{
         transform-origin: top;
         transition: transform 400ms ease-in-out;
     }
-    
+
     nav ul{
         margin: 0;
         padding: 0;
         list-style: none;
     }
-    
+
     nav li{
         margin-bottom: 1em;
         margin-left: 1em;
         padding: 0.2em;
     }
-    
+
     nav a{
         color: black;
         text-decoration: none;
@@ -115,32 +112,25 @@ footer{
         opacity: 0;
         transition: opacity 150ms ease-in-out;
     }
-    
+
     nav a:hover{
         color: rgb(115, 176, 209);
         background-color: white;
         cursor: pointer;
     }
-    
+
     .hamburger:checked ~ nav{
         transform: scale(1,1);
     }
-    
+
     .hamburger:checked ~ nav a{
         opacity: 1;
         transition: opacity 250ms ease-in-out 250ms;;
     }
 
-    /*Fit nav to all devices*/
-    @media screen and (max-width: 260px){
-        .logo{
-            font-size: 0.7em;
-        }
-    }
-
     /*CONTENT INDEX*/
     .indexPhoto{
-        margin-top: 1.5em;
+        margin-top: 3em;
     }
 
     #indexInfo{
@@ -163,6 +153,7 @@ footer{
         color: rgb(255, 255, 255);
         font-size: 1.5em;
         font-weight: 450;
+        margin-top: 0;
     }
 
     #indexInfo .insideIndexInfo p{
@@ -190,37 +181,8 @@ footer{
     }
 
     #indexInfo a:hover{
-        pointer: cursor;
+        cursor: pointer;
         color:  rgba(115, 176, 209, 0.8);
-    }
-
-    /*Fit main index content to all devices*/
-    @media screen and (max-width: 300px){
-        .indexPhoto{
-            margin-top: 3.5em;
-        }
-
-        #indexInfo .insideIndexInfo p{
-            font-size: 0.9em;
-            padding: 0.5em;
-        }
-    }
-
-    @media screen and (min-width: 800px){
-        #indexInfo{
-            justify-content: center;
-            align-items: center;
-            top: 0;
-            padding: 0;
-        }
-
-        #indexInfo .insideIndexInfo{
-            width: 70%;
-        }
-
-        #indexInfo .insideIndexInfo h3{
-            margin: 0;
-        }
     }
     
 /*CONTENT CONTACT US PAGE*/
@@ -243,7 +205,7 @@ footer{
     border-radius: 5px;
     border: 1px solid black;
     }
-    
+
 .contactForm h1 {
     text-align: center;
     font-weight: 100;
@@ -289,12 +251,12 @@ footer{
     border-radius: 0.4em;
     width: 80%;
     }
-    
+
 .formContent .textareaLabel {
     position: relative;
     top: 1em;
     }
-        
+
 .formContent textarea {
     position: relative;
     top: 2em;
@@ -303,7 +265,7 @@ footer{
     border-radius: 0.4em;
     width: 80%;
     }
-    
+
 .formContent input[type=submit]{
     position: relative;
     top: 3em;
@@ -315,9 +277,9 @@ footer{
     background-color: white;
     text-transform: uppercase;
     }
-        
+
 .formContent input[type=submit]:hover {
-    background-color:  rgba(115, 176, 209, 1);
+    background-color: var(--blue);
     color: white;
     }
 
@@ -443,12 +405,12 @@ footer{
         margin-top: 0;
         margin-bottom: 6px;
     }
-    
+
     .box_top p{
         padding-bottom: 12px;
         margin:0;
     }
-    
+
     .content{
         overflow: hidden;
         max-height: 100%;
@@ -477,12 +439,12 @@ footer{
     .month{
         margin-bottom: 30px;
     }
-    
+
     h1#November{
         color: #062636;
         margin-top: 50px;
     }
-    
+
     #month_nav{
         width: 100%;
         margin: auto;
@@ -493,35 +455,35 @@ footer{
     ul#month_nav {
         padding-left: 0;
     }
-    
+
     #month_nav li{
         display: inline;
     }
-    
+
     #month_nav a {
         color: #062636;
         font-weight: bold;
         font-size: 26px;
         padding-right: 30px;
     }
-    
+
     .flex{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
-    
+
     #signUp_name{
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
-        flex-direction: column; 
+        flex-direction: column;
     }
     #signUp_contact{
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
-        flex-direction: column; 
+        flex-direction: column;
     }
     #signUpForm{
         display: flex;
@@ -540,7 +502,34 @@ footer{
         height: 30px;
     }
 
-     @media screen and (max-width: 500px){
+    /*MAKE IT RESPONSIVE*/
+    @media screen and (max-width: 300px){
+        /*Navigation bar*/
+        .logo{
+            width: 48%;
+        }
+        
+        /*Home (Index) page*/
+        .indexPhoto{
+            margin-top: 3em;
+        }
+
+        #indexInfo .insideIndexInfo p{
+            font-size: 0.9em;
+            padding: 0.5em;
+            padding-bottom: 1em;
+        }
+    }
+
+    @media screen and (min-width: 300px){
+        /*Navigation bar*/
+       .logo{
+           width: 30%;
+       }
+    }
+
+    @media screen and (max-width: 500px){
+        /*Innovation Camp Schedule page*/
         #month_nav a{
             font-size: 22px;
             padding-right: 10px;
@@ -552,3 +541,101 @@ footer{
             font-size: 15px;
         }
      }
+
+     @media screen and (min-width: 700px) {
+         /*Navigation bar*/
+        .logo{
+            width: 20%;
+        }
+
+        /* Contact us page */
+         .contactForm {
+            top: 7em;
+            margin: 8em 4em;
+            margin-top: 0;
+            padding: 2em 6em;
+            }
+            
+        .formContent {
+            margin-bottom: 4em;
+            }
+           
+        .formContent input[type=submit]{
+            font-size: 0.8em;
+            }
+    
+        /* Contact us submitted page*/
+        .submittedContent {
+            position: relative;
+            top: 9em;
+            margin: 3em;
+            padding: 3em;
+        }
+    
+        .submittedContent h1 {
+            font-size: 1.4em;
+        }
+    
+        .submittedContent p {
+            font-size: 1em;
+        }   
+    }
+
+    @media screen and (min-width: 800px){
+        /*Home (Index) page*/
+        #indexInfo{
+            justify-content: center;
+            align-items: center;
+            top: 0;
+            padding: 0;
+        }
+
+        #indexInfo .insideIndexInfo{
+            width: 70%;
+        }
+
+        #indexInfo .insideIndexInfo h3{
+            margin: 0;
+        }
+    }
+
+    @media screen and (min-width: 1000px){
+        /*Navigation bar*/
+       .logo{
+           width: 15%;
+       }
+    }
+    
+    @media screen and (min-width: 1300px){
+        .logo{
+            width: 10%;
+        }
+        /* Contact us page */
+        .formContent input[type=text]{
+            width: 30%;
+        }
+    
+        .formContent textarea {
+           width: 30%;
+        }
+    
+        .contactForm {
+            margin: 0 12em;
+        }
+    
+         /* Contact us submitted page */
+         .submittedContent {
+            position: relative;
+            top: 11em;
+            margin: 2em 15em;
+            padding: 3em;
+        }
+    
+        .submittedContent h1 {
+            font-size: 1.6em;
+        }
+    
+        .submittedContent p {
+         font-size: 1.3em;
+        }
+    }
