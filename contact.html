@@ -51,19 +51,25 @@
             
 
             <!-- Choices -->
-            <p>Contact us as:</p>
-            <div class="radio">
+            <span>Contact us as:</span>
+            <div class="formRadio">
                 <label for="contactEmail">Paricipant</label><br>
-                <input type="radio" name="contact" id="contactEmail" value="email"><br>
-                <label for="contactPhone"></label><br>
-                <input type="radio" name="contact" id="contactPhone" value="phone"><br>
+                <div class="radioInput">
+                    <input type="radio" name="contact" id="contactParticipant" value="paricipant"><br>
+                </div>
+                <label for="contactPhone">Potential clients</label><br>
+                <div class="radioInput">
+                <input type="radio" name="contact" id="contactClients" value="clients"><br>
+                </div>
                 <label for="contactPhone">Other</label><br>
-                <input type="radio" name="contact" id="contactPhone" value="phone"><br>
+                <div class="radioInput">
+                    <input type="radio" name="contact" id="contactOther" value="other"><br>
+                </div>
             </div>
             
 
             <!-- Message -->
-                <label for="message">Message:</label><br>
+                <label class="textareaLabel" for="message">Message:</label><br>
                 <textarea name="message-field" id="message" rows="10" cols="20"></textarea><br>
 
             <!-- Submit -->

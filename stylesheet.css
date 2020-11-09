@@ -231,10 +231,11 @@ footer{
 .contactForm {
     background-color: whitesmoke;
     display: flexbox;
+    align-items: center;
     height: auto;
     width: auto;
     position: relative;
-    top: 8em;
+    top: 3em;
     margin: 10em 1em;
     margin-top: 0;
     padding: 1em;
@@ -244,26 +245,41 @@ footer{
     }
     
 .contactForm h1 {
-    text-align: left;
+    text-align: center;
     font-weight: 100;
     font-size: 1.4em;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     color: black;
     }
-    
+
 .contactForm p {
-    text-align: left;
+    text-align: center;
     font-size: 1em;
-    padding-bottom: 1em;
+    padding-bottom: 0.5em;
     }
-    
-.formContent label{
+
+.contactForm span {
     position: relative;
-    top: 0em;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;  
-    }
+}
+
+.formRadio {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.formRadio label {
+   position: relative;
+   top: 1em;   
+}
+
+.radioInput {
+    position: relative;
+    bottom: 0em;
+   
+}
+
         
 .formContent input[type=text]{
     position: relative;
@@ -374,8 +390,14 @@ footer{
     }
 
     .contactForm {
-        margin: 0 12em;
-        
+        margin: 0 12em;  
+    }
+
+    .formRadio {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 1em;
+    
     }
 
      /* Contact us submitted page desktop */
