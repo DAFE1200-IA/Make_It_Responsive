@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>We looooove innovation</title>
-	<link rel="stylesheet" type="text/css" href="schedule.css">
+	<title>Innovation Camp Schedule</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 	<!-- To Do:
 	 * Make responsive:
@@ -18,10 +18,10 @@
 		<div class="logo">
 			<h1>INOVA</h1>
 		</div> 
-			<input type="checkbox" id="hamburger" class="hamburger">
-			<label for="hamburger" class="hamburger-label">
-				 <span></span>
-			</label>
+		<input type="checkbox" id="hamburger" class="hamburger">
+		<label for="hamburger" class="hamburger-label">
+			<span></span>
+		</label>
 		<nav>
 			<ul>
 				<li><a href="index.html">Home</a></li>
@@ -35,13 +35,14 @@
 
 	<!-- SCHEDULE -->
 
-	<ul id="month_nav">
-		<li><a href="#November">November</a></li>
-		<li><a href="#Desember">Desember</a></li>
-		<li><a href="#Januar">Januar</a></li>
-	</ul>
 
 	<div id="container">
+		<ul id="month_nav">
+			<li><a>Navigate to: </a></li>
+			<li><a href="#November">November</a></li>
+			<li><a href="#December">December</a></li>
+			<li><a href="#January">January</a></li>
+		</ul>
 		
 		<div class="month">
 			<h1 class="month_name" id="November">November</h1>
@@ -57,7 +58,7 @@
 						</p>
 					</div>
 					<div class="box_bot">
-						<a>Meld deg på Ikea sin Innovasjons Camp!</a>
+						<a href="signUpPage.html">Sign up for Ikea's Innovation Camp!</a>
 					</div>
 				</div>
 
@@ -71,7 +72,7 @@
 						</p>
 					</div>
 					<div class="box_bot">
-						<a>Meld deg på Redd Barnas sin Innovasjons Camp!</a>
+						<a href="signUpPage.html">Sing up for Redd Barnas's Innovation Camp!</a>
 					</div>
 				</div>
 
@@ -86,17 +87,17 @@
 						</p>
 					</div>
 					<div class="box_bot">
-						<a>Meld deg på Helly Hansens sin Innovasjons Camp!</a>
+						<a href="signUpPage.html">Sing up for Helly Hansens's Innovation Camp!</a>
 					</div>
 				</div></div>
 			</div>
 
 			<div class="month">
-				<h1 class="month_name" id="Desember">Desember</h1>
+				<h1 class="month_name" id="December">December</h1>
 				<div class="flex"><div class="box">
 					<div  class="box_top">
 						<h2>IKEA</h2>
-						<p>Ikea skal ha innovasjonscamp om blabla</p>
+						<p>Ikea skal ha innovasjonscamp</p>
 					</div>
 					<div class="content">
 						<p>
@@ -104,7 +105,7 @@
 						</p>
 					</div>
 					<div class="box_bot">
-						<a>Meld deg på Ikea sin Innovasjons Camp!</a>
+						<a href="signUpPage.html">Sing up for Ikea's Innovation Camp!</a>
 					</div>
 				</div>
 
@@ -119,7 +120,7 @@
 						</p>
 					</div>
 					<div class="box_bot">
-						<a>Meld deg på Redd Barnas sin Innovasjons Camp!</a>
+						<a href="signUpPage.html">Sing up for Redd Barnas's Innovation Camp!</a>
 					</div>
 				</div>
 
@@ -134,13 +135,13 @@
 						</p>
 					</div>
 					<div class="box_bot">
-						<a>Meld deg på Helly Hansens sin Innovasjons Camp!</a>
+						<a href="signUpPage.html">Sing up for Helly Hansens's Innovation Camp!</a>
 					</div>
 				</div></div>
 			</div>
 
 			<div class="month">
-				<h1 class="month_name" id="Januar">Januar</h1>
+				<h1 class="month_name" id="January">January</h1>
 				<div class="flex"><div class="box">
 					<div  class="box_top">
 						<h2>IKEA</h2>
@@ -152,7 +153,7 @@
 						</p>
 					</div>
 					<div class="box_bot">
-						<a>Meld deg på Ikea sin Innovasjons Camp!</a>
+						<a href="signUpPage.html">Sing up for Ikea's Innovation Camp!</a>
 					</div>
 				</div>
 
@@ -167,7 +168,7 @@
 						</p>
 					</div>
 					<div class="box_bot">
-						<a>Meld deg på Redd Barnas sin Innovasjons Camp!</a>
+						<a href="signUpPage.html">Sing up for Redd Barnas's Innovation Camp!</a>
 					</div>
 				</div>
 
@@ -182,7 +183,7 @@
 						</p>
 					</div>
 					<div class="box_bot">
-						<a>Meld deg på Helly Hansens sin Innovasjons Camp!</a>
+						<a href="signUpPage.html">Sing up for Helly Hansens's Innovation Camp!</a>
 					</div>
 				</div>
 			</div></div>
@@ -197,8 +198,8 @@
 					"click", function() {
 						this.classList.toggle("active");
 						var content = this.nextElementSibling;
-						if (content.style.maxHeight){
-							content.style.maxHeight = null;
+						if (content.style.maxHeight!="0px"){
+							content.style.maxHeight = "0px";
 						} else {
 							content.style.maxHeight = content.scrollHeight + "px";
 						}
@@ -206,12 +207,17 @@
 					);
 			}
 
-			var magicWidth = 933;
+			var magicWidth = 1049;
 			var width = document.body.clientWidth;
 			if(width>magicWidth) {
 				for (var i = coll.length - 1; i >= 0; i--) {
 					var content = coll[i].nextElementSibling;
-					content.style.maxHeight = content.scrollHeight + "px";;
+					content.style.maxHeight = (content.scrollHeight+22) + "px";;
+				}
+			} else{
+				for (var i = coll.length - 1; i >= 0; i--) {
+					var content = coll[i].nextElementSibling;
+					content.style.maxHeight = "0px";
 				}
 			}
 
@@ -226,7 +232,7 @@
 				} else{
 					for (var i = coll.length - 1; i >= 0; i--) {
 						var content = coll[i].nextElementSibling;
-						content.style.maxHeight = null;
+						content.style.maxHeight = "0px";
 					}
 				}
 			})
@@ -239,7 +245,7 @@
 		console.log(month_nav_elements);
 		var dMonth = new Date().getMonth();
 		var month = new Array();
-		month[0] = "January";
+		month[0] = "Januaryy";
 		month[1] = "February";
 		month[2] = "March";
 		month[3] = "April";
