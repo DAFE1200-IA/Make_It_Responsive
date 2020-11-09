@@ -188,6 +188,15 @@ h1#November{
     margin-top: 50px;
 }
 
+.monthPos{
+	position: relative;
+	top:-600px;
+}
+#December1{
+	position: relative;
+	top:-600px;
+}
+
 #month_nav{
 	width: 100%;
 	margin: auto;
