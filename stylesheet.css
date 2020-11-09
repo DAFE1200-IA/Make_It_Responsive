@@ -410,9 +410,12 @@ footer{
         background-color: rgb(115, 176, 209);
         color: white;
         text-align: center;
+        transition: background-color 0.5s;
     }
     .box_top:hover{
-        cursor:pointer;
+        cursor: pointer;
+        background-color:#5c8da7;
+        transition: background-color 0.5s;
     }
     .box_top h2{
         padding-top: 12px;
@@ -430,7 +433,7 @@ footer{
         overflow: hidden;
         max-height: 100%;
         transition: max-height 0.2s ease-out;
-        background-color: #EBF3FF;
+        background-color: white;
     }
     .content p{
         padding: 20px;
@@ -441,15 +444,20 @@ footer{
         line-height: 1.4em;
     }
     .box_bot{
-        background-color: #EBF3FF;
+        background-color: white;
         text-align: center;
-        height: 40px;
+        height: 60px;
     }
     .box_bot a{
         font-weight: bold;
         letter-spacing: 0.04em;
-        line-height: 40px;
+        line-height: 60px;
         font-size: 17px;
+        color: #062636;
+        text-decoration: none;
+    }
+    .box_bot a:hover{
+        color:  rgb(115, 176, 209);
     }
     .month{
         margin-bottom: 30px;
@@ -465,7 +473,7 @@ footer{
         margin: auto;
         position: fixed;
         background-color: whitesmoke;
-        height: 40px;
+        padding-bottom: 5px;
     }
     ul#month_nav {
         padding-left: 0;
@@ -481,7 +489,10 @@ footer{
         font-size: 26px;
         padding-right: 30px;
     }
-    
+    .monthPos{
+    position: relative;
+    top:-140px;
+    }
     .flex{
         display: flex;
         flex-direction: row;
