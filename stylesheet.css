@@ -165,11 +165,11 @@ footer{
     }
 
     #indexInfo .insideIndexInfo p{
-        background-color: whitesmoke;
+        background-color: white;
         color: black;
         text-align: center;
         font-size: 1em;
-        padding-top: 1em;
+        padding-top: 2em;
         padding-bottom: 1em;
         padding-left: 1.5em;
         padding-right: 1.5em;
