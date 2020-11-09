@@ -223,7 +223,7 @@ footer{
     }
     
 /*CONTENT CONTACT US PAGE*/
-.backgroundContact{
+.bodyContact{
     background-color: rgba(115, 176, 209, 1);
     }
 
@@ -233,14 +233,17 @@ footer{
     height: auto;
     width: auto;
     position: relative;
-    top: 5em;
-    margin: 8em 1em;
+    top: 8em;
+    margin: 10em 1em;
     margin-top: 0;
     padding: 1em;
+    padding-bottom: 4em;
     border-radius: 5px;
+    border: 1px solid black;
     }
     
 .contactForm h1 {
+    text-align: center;
     font-weight: 100;
     font-size: 1.4em;
     text-transform: uppercase;
@@ -249,13 +252,9 @@ footer{
     }
     
 .contactForm p {
-    text-align: center;
+    text-align: left;
     font-size: 1em;
     padding-bottom: 1em;
-    }
-    
-.formContent {
-    margin-bottom: 2em;
     }
     
 .formContent label{
@@ -292,7 +291,7 @@ footer{
     position: relative;
     top: 3em;
     color: black;
-    padding: 0.7em;
+    padding: 0.8em;
     border: none;
     border-radius: 4px;
     cursor: pointer;
