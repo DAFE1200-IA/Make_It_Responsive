@@ -422,7 +422,8 @@ footer{
      .submittedContent {
         position: relative;
         top: 11em;
-        margin: 2em 15em;
+        margin: 37em 15em;
+        margin-top: 0em;
         padding: 3em;
     }
 
@@ -607,7 +608,7 @@ footer{
         /* Contact us page */
          .contactForm {
             top: 7em;
-            margin: 8em 4em;
+            margin: 10em 4em;
             margin-top: 0;
             padding: 2em 6em;
             }
@@ -624,7 +625,8 @@ footer{
         .submittedContent {
             position: relative;
             top: 9em;
-            margin: 3em;
+            margin: 37em 15em;
+            margin-top: 0em;
             padding: 3em;
         }
     
@@ -676,14 +678,16 @@ footer{
         }
     
         .contactForm {
-            margin: 0 12em;
+            margin: 10em 12em;
+            margin-top: 0em;
         }
     
          /* Contact us submitted page */
          .submittedContent {
             position: relative;
             top: 11em;
-            margin: 2em 15em;
+            margin: 0em 15em;
+            margin-top: 0em;
             padding: 3em;
         }
     
