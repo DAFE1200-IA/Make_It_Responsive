@@ -241,7 +241,7 @@ footer{
                max-height: 100vh;
                margin: auto;
            }
-    
+
 /*CONTENT CONTACT US PAGE*/
 .bodyContact{
     background-color: rgba(115, 176, 209, 1);
@@ -441,6 +441,7 @@ footer{
     width: 80%;
     margin: auto;
     padding-top: 80px;
+    margin-bottom: 80px;
     }
     .box{
         width: 400px;
@@ -452,8 +453,12 @@ footer{
         background-color: rgb(115, 176, 209);
         color: white;
         text-align: center;
+        transition: background-color 0.5s;
     }
     .box_top:hover{
+        cursor: pointer;
+        background-color:#5c8da7;
+        transition: background-color 0.5s;
         cursor:pointer;
     }
     .box_top h2{
@@ -472,7 +477,7 @@ footer{
         overflow: hidden;
         max-height: 100%;
         transition: max-height 0.2s ease-out;
-        background-color: #EBF3FF;
+        background-color: white;
     }
     .content p{
         padding: 20px;
@@ -483,15 +488,20 @@ footer{
         line-height: 1.4em;
     }
     .box_bot{
-        background-color: #EBF3FF;
+        background-color: white;
         text-align: center;
-        height: 40px;
+        height: 60px;
     }
     .box_bot a{
         font-weight: bold;
         letter-spacing: 0.04em;
-        line-height: 40px;
+        line-height: 60px;
         font-size: 17px;
+        color: #062636;
+        text-decoration: none;
+    }
+    .box_bot a:hover{
+        color:  rgb(115, 176, 209);
     }
     .month{
         margin-bottom: 30px;
@@ -507,7 +517,7 @@ footer{
         margin: auto;
         position: fixed;
         background-color: whitesmoke;
-        height: 40px;
+        padding-bottom: 5px;
     }
     ul#month_nav {
         padding-left: 0;
@@ -523,13 +533,18 @@ footer{
         font-size: 26px;
         padding-right: 30px;
     }
-
+    .monthPos{
+    position: relative;
+    top:-140px;
+    }
     .flex{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
-
+    .signUpBack{
+        background-color: rgba(115, 176, 209, 1);
+    }
     #signUp_name{
         display: flex;
         justify-content: space-evenly;
@@ -585,14 +600,11 @@ footer{
        }
     }
 
-    @media screen and (max-width: 500px){
+    @media screen and (max-width: 600px){
         /*Innovation Camp Schedule page*/
         #month_nav a{
             font-size: 22px;
             padding-right: 10px;
-        }
-        #month_nav{
-            height: 60px;
         }
         .box_bot a{
             font-size: 15px;
@@ -666,6 +678,10 @@ footer{
     @media screen and (min-width: 1300px){
         .logo{
             width: 10%;
+        }
+        /* Sign Up Page */
+        #signUpForm input[type=text]{
+            width: 100%;
         }
         /* Contact us page */
         .formContent input[type=text]{
