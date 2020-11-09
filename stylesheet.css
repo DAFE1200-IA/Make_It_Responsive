@@ -355,7 +355,7 @@ footer{
     font-weight: 100;
     letter-spacing: 0.09em;
     text-transform: uppercase;
-    color: var(--blue);
+    color: rgb(50, 84, 114);
 }
 
 .submittedContent p {
