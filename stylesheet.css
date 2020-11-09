@@ -694,4 +694,7 @@ footer{
         .submittedContent p {
          font-size: 1.3em;
         }
+        .formContent input[type=submit]{
+            top: 4.5em;
+        }
     }
