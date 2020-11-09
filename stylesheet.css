@@ -348,7 +348,8 @@ footer{
 .submittedContent {
     position: relative;
     top: 7em;
-    margin: 1em;
+    margin: 18em 1em;
+    margin-top: 0em;
     border-radius: 5px;
     padding: 0.9em;
     text-align: center;
@@ -556,7 +557,8 @@ footer{
     .submittedContent {
         position: relative;
         top: 9em;
-        margin: 3em;
+        margin: 20em 2em;
+        margin-top: 0em;
         padding: 3em;
     }
 
@@ -609,7 +611,8 @@ footer{
     }
 
     .contactForm {
-        margin: 0em 12em; 
+        margin: 10em 12em;
+        margin-top: 0em; 
     }
 
     .formRadio {
@@ -622,7 +625,7 @@ footer{
      .submittedContent {
         position: relative;
         top: 11em;
-        margin: 0em 15em;
+        margin: 37em 15em;
         margin-top: 0em;
         padding: 3em;
     }
