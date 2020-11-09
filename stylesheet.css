@@ -311,7 +311,7 @@ footer{
     }
         
 .formContent input[type=submit]:hover {
-    background-color: var(--blue);
+    background-color:  rgba(115, 176, 209, 1);
     color: white;
     }
 
