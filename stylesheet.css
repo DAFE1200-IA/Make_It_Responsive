@@ -243,12 +243,12 @@ footer{
     }
     
 .contactForm h1 {
-    text-align: center;
+    text-align: left;
     font-weight: 100;
     font-size: 1.4em;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    color: var(--blue);
+    color: black;
     }
     
 .contactForm p {
