@@ -27,15 +27,16 @@ footer{
     
     .logo{
         margin: 0;
-        padding: 0;
+        /*padding: 0;
         font-size: 1em;
         font-family: Arial, Helvetica, sans-serif;
         letter-spacing: 0.2em;
         text-align: center;
         background-color:white;
-        color: rgb(50, 84, 114);
+        color: rgb(50, 84, 114); */
+        padding-top: 0.3em;
     }
-    
+
     .hamburger{
         position: absolute !important;
         top: -9999px !important;
@@ -62,7 +63,7 @@ footer{
     .hamburger-label span::after{
         display: block;
         background-color: rgb(50, 84, 114);;
-        height: 1.8px;
+        height: 1px;
         width: 2em;
         border-radius: 2px;
         position: relative;
@@ -139,7 +140,7 @@ footer{
 
     /*CONTENT INDEX*/
     .indexPhoto{
-        margin-top: 5em;
+        margin-top: 1.5em;
     }
 
     #indexInfo{
@@ -290,7 +291,7 @@ footer{
 .formContent input[type=submit]{
     position: relative;
     top: 3em;
-    color: red;
+    color: black;
     padding: 0.8em;
     border: none;
     border-radius: 4px;
@@ -300,7 +301,7 @@ footer{
     }
         
 .formContent input[type=submit]:hover {
-    background-color: var(--blue);
+    background-color:  rgba(115, 176, 209, 1);
     color: white;
     }
 
