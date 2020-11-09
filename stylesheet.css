@@ -397,10 +397,10 @@ Found at 05 11 2020  https://stackoverflow.com/questions/6169666/how-to-resize-a
 
 /* SCHEDULE PAGE */
     #container{
-    width: 80%;
-    margin: auto;
-    padding-top: 80px;
-    margin-bottom: 80px;
+        width: 80%;
+        margin: auto;
+        padding-top: 80px;
+        margin-bottom: 80px;
     }
     .box{
         width: 400px;
