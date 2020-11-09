@@ -328,6 +328,73 @@ footer{
     font-size: 1em;
 }
 
+/* Responsive rules */
+@media screen and (min-width: 700px) {
+    /* Contact us page ipad */
+     .contactForm {
+        top: 7em;
+        margin: 8em 4em;
+        margin-top: 0;
+        padding: 2em 6em;
+        }
+        
+    .formContent {
+        margin-bottom: 4em;
+        }
+       
+    .formContent input[type=submit]{
+        font-size: 0.8em;
+        }
+
+    /* Contact us submitted page ipad */
+    .submittedContent {
+        position: relative;
+        top: 9em;
+        margin: 3em;
+        padding: 3em;
+    }
+
+    .submittedContent h1 {
+        font-size: 1.4em;
+    }
+
+    .submittedContent p {
+        font-size: 1em;
+    }   
+}
+
+@media screen and (min-width: 1300px){
+    /* Contact us page desktop */
+    .formContent input[type=text]{
+        width: 30%;
+    }
+
+    .formContent textarea {
+       width: 30%;
+    }
+
+    .contactForm {
+        margin: 0 12em;
+        
+    }
+
+     /* Contact us submitted page desktop */
+     .submittedContent {
+        position: relative;
+        top: 11em;
+        margin: 2em 15em;
+        padding: 3em;
+    }
+
+    .submittedContent h1 {
+        font-size: 1.6em;
+    }
+
+    .submittedContent p {
+     font-size: 1.3em;
+    }
+}
+
 /* SCHEDULE PAGE */
     #container{
     width: 80%;
