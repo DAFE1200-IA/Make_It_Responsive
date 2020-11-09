@@ -184,69 +184,95 @@ footer{
         cursor: pointer;
         color:  rgba(115, 176, 209, 0.8);
     }
+
+    /*CONTENT INNOVATION CAMP PAGE*/
+    .campText{
+        background-color: white;
+        height: auto;
+        width: auto;
+        top: 5em;
+        margin: 1em;
+        padding: 1em;
+        text-align: center;
+    }
     
-    /*CONTENT ABOUT US AND INOVATIONCAMP PAGE*/
+    .campText h1 {
+        text-align: center;
+        color: white;
+        background-color: rgba(115, 176, 209, 0.8);
+    }
 
-        .generalText{
-          background-color: white;
-          height: auto;
-          width: auto;
-          top: 5em;
-          margin: 1em;
-          padding: 1em;
-          text-align: center;
-        }
-        .generalText h1 {
-          text-align: center;
-          color: white;
-          background-color: rgba(115, 176, 209, 0.8);
-        }
-        .generalText a{
-            color: rgb(6, 38, 54);
-            text-decoration: none;
-            color: rgb(6, 38, 54);
-            font-weight: 600;
-            font-size: 1em;
-        }
+    .campText a{
+        color: rgb(6, 38, 54);
+        text-decoration: none;
+        color: rgb(6, 38, 54);
+        font-weight: 600;
+        font-size: 1em;
+    }
 
-        .generalText h2 {
-          text-align: center;
-          color: rgba(50, 84, 114, 0.8);
-        }
+    .campText h2 {
+        text-align: center;
+        color: rgba(50, 84, 114, 0.8);
+    }
 
-/*Refrence: Stack Exchange inc (2018, 20 april) Html How to resize an image to fit in the browser window? Stack Overflow. 
+    .campText a:hover{
+        color: rgb(115, 176, 209);
+    }
+
+/*CONTENT ABOUT US*/
+        
+/*Teaching source: Stack Exchange inc (2018, 20 april) Html How to resize an image to fit in the browser window? Stack Overflow. 
 Found at 05 11 2020  https://stackoverflow.com/questions/6169666/how-to-resize-an-image-to-fit-in-the-browser-window*/
 
-        .generalDivwidth{
-          width: 650px;
-        }
+#aboutStaff {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
 
+.aboutText{
+    background-color: white;
+    height: auto;
+    width: auto;
+    top: 5em;
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+}
 
-        #generalPhoto {
-              display: flex;
-              flex-direction: row;
-              flex-wrap: wrap;
-            justify-content: space-around;
-              width: 100%;
-              height: auto;
-              margin: 0;
-              padding: 0;
-           }
-           .photo{
-            margin-right: 20px;
-            margin-bottom: 20px;
-            max-width: 390px;
-           }
-           .photo p{
-            text-align: center;
-            font-size: 18px;
-            font-weight: bold;
-           }
-        .center-fit {
-               max-width: 100%;
-               max-height: 100vh;
-               margin: auto;
-           }
+.aboutText h1 {
+    text-align: center;
+    color: white;
+    background-color: rgba(115, 176, 209, 0.8);
+}
+
+.aboutText h2 {
+    text-align: center;
+    color: rgba(50, 84, 114, 0.8);
+}
+
+.photo{
+    margin-right: 20px;
+    margin-bottom: 20px;
+    max-width: 390px;
+}
+           
+.photo p{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.center-fit {
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+}
     
 /*CONTENT CONTACT US PAGE*/
 .bodyContact{
