@@ -59,7 +59,7 @@ footer{
     .hamburger-label span::before,
     .hamburger-label span::after{
         display: block;
-        background-color: rgb(50, 84, 114);;
+        background-color: rgb(50, 84, 114);
         height: 1px;
         width: 2em;
         border-radius: 2px;
@@ -268,7 +268,7 @@ footer{
     font-size: 1.4em;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    color: black;
+    color: rgb(50, 84, 114);
     }
 
 .contactForm p {
@@ -280,6 +280,7 @@ footer{
 .contactForm span {
     position: relative;
     top: 1em;
+    color: rgb(50, 84, 114);
 }
 
 .formRadio {
@@ -334,7 +335,7 @@ footer{
     }
 
 .formContent input[type=submit]:hover {
-    background-color: var(--blue);
+    background-color: rgb(50, 84, 114);
     color: white;
     }
 
