@@ -34,16 +34,6 @@ footer{
         width: 40%;
     }
 
-    .logo img{
-        width: 5%;
-    }
-
-    @media screen and (max-width: 300px){
-        .logo img{
-            width: 10%;
-        }
-    }
-
     .hamburger{
         position: absolute !important;
         top: -9999px !important;
@@ -163,6 +153,7 @@ footer{
         color: rgb(255, 255, 255);
         font-size: 1.5em;
         font-weight: 450;
+        margin-top: 0;
     }
 
     #indexInfo .insideIndexInfo p{
@@ -202,10 +193,11 @@ footer{
 .contactForm {
     background-color: whitesmoke;
     display: flexbox;
+    align-items: center;
     height: auto;
     width: auto;
     position: relative;
-    top: 8em;
+    top: 3em;
     margin: 10em 1em;
     margin-top: 0;
     padding: 1em;
@@ -215,7 +207,7 @@ footer{
     }
 
 .contactForm h1 {
-    text-align: left;
+    text-align: center;
     font-weight: 100;
     font-size: 1.4em;
     text-transform: uppercase;
@@ -224,18 +216,33 @@ footer{
     }
 
 .contactForm p {
-    text-align: left;
+    text-align: center;
     font-size: 1em;
-    padding-bottom: 1em;
+    padding-bottom: 0.5em;
     }
 
-.formContent label{
+.contactForm span {
     position: relative;
-    top: 0em;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    }
+}
 
+.formRadio {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.formRadio label {
+   position: relative;
+   top: 1em;   
+}
+
+.radioInput {
+    position: relative;
+    bottom: 0em;
+   
+}
+
+        
 .formContent input[type=text]{
     position: relative;
     padding: 0.5em;
@@ -297,6 +304,79 @@ footer{
 
 .submittedContent p {
     font-size: 1em;
+}
+
+/* Responsive rules */
+@media screen and (min-width: 700px) {
+    /* Contact us page ipad */
+     .contactForm {
+        top: 7em;
+        margin: 8em 4em;
+        margin-top: 0;
+        padding: 2em 6em;
+        }
+        
+    .formContent {
+        margin-bottom: 4em;
+        }
+       
+    .formContent input[type=submit]{
+        font-size: 0.8em;
+        }
+
+    /* Contact us submitted page ipad */
+    .submittedContent {
+        position: relative;
+        top: 9em;
+        margin: 3em;
+        padding: 3em;
+    }
+
+    .submittedContent h1 {
+        font-size: 1.4em;
+    }
+
+    .submittedContent p {
+        font-size: 1em;
+    }   
+}
+
+@media screen and (min-width: 1300px){
+    /* Contact us page desktop */
+    .formContent input[type=text]{
+        width: 30%;
+    }
+
+    .formContent textarea {
+       width: 30%;
+    }
+
+    .contactForm {
+        margin: 0 12em;  
+    }
+
+    .formRadio {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 1em;
+    
+    }
+
+     /* Contact us submitted page desktop */
+     .submittedContent {
+        position: relative;
+        top: 11em;
+        margin: 2em 15em;
+        padding: 3em;
+    }
+
+    .submittedContent h1 {
+        font-size: 1.6em;
+    }
+
+    .submittedContent p {
+     font-size: 1.3em;
+    }
 }
 
 /* SCHEDULE PAGE */
@@ -423,14 +503,6 @@ footer{
     }
 
     /*MAKE IT RESPONSIVE*/
-
-    @media screen and (min-width: 300px){
-        /*Navigation bar*/
-       .logo{
-           width: 30%;
-       }
-    }
-
     @media screen and (max-width: 300px){
         /*Navigation bar*/
         .logo{
@@ -439,7 +511,7 @@ footer{
         
         /*Home (Index) page*/
         .indexPhoto{
-            margin-top: 3.5em;
+            margin-top: 3em;
         }
 
         #indexInfo .insideIndexInfo p{
@@ -447,6 +519,13 @@ footer{
             padding: 0.5em;
             padding-bottom: 1em;
         }
+    }
+
+    @media screen and (min-width: 300px){
+        /*Navigation bar*/
+       .logo{
+           width: 30%;
+       }
     }
 
     @media screen and (max-width: 500px){
@@ -462,3 +541,101 @@ footer{
             font-size: 15px;
         }
      }
+
+     @media screen and (min-width: 700px) {
+         /*Navigation bar*/
+        .logo{
+            width: 20%;
+        }
+
+        /* Contact us page */
+         .contactForm {
+            top: 7em;
+            margin: 8em 4em;
+            margin-top: 0;
+            padding: 2em 6em;
+            }
+            
+        .formContent {
+            margin-bottom: 4em;
+            }
+           
+        .formContent input[type=submit]{
+            font-size: 0.8em;
+            }
+    
+        /* Contact us submitted page*/
+        .submittedContent {
+            position: relative;
+            top: 9em;
+            margin: 3em;
+            padding: 3em;
+        }
+    
+        .submittedContent h1 {
+            font-size: 1.4em;
+        }
+    
+        .submittedContent p {
+            font-size: 1em;
+        }   
+    }
+
+    @media screen and (min-width: 800px){
+        /*Home (Index) page*/
+        #indexInfo{
+            justify-content: center;
+            align-items: center;
+            top: 0;
+            padding: 0;
+        }
+
+        #indexInfo .insideIndexInfo{
+            width: 70%;
+        }
+
+        #indexInfo .insideIndexInfo h3{
+            margin: 0;
+        }
+    }
+
+    @media screen and (min-width: 1000px){
+        /*Navigation bar*/
+       .logo{
+           width: 15%;
+       }
+    }
+    
+    @media screen and (min-width: 1300px){
+        .logo{
+            width: 10%;
+        }
+        /* Contact us page */
+        .formContent input[type=text]{
+            width: 30%;
+        }
+    
+        .formContent textarea {
+           width: 30%;
+        }
+    
+        .contactForm {
+            margin: 0 12em;
+        }
+    
+         /* Contact us submitted page */
+         .submittedContent {
+            position: relative;
+            top: 11em;
+            margin: 2em 15em;
+            padding: 3em;
+        }
+    
+        .submittedContent h1 {
+            font-size: 1.6em;
+        }
+    
+        .submittedContent p {
+         font-size: 1.3em;
+        }
+    }
