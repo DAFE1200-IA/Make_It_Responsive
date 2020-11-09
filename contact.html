@@ -31,51 +31,40 @@
     </header>
 
     <!-- Contact form -->
-    <form action="submitPage.html">
+    <form class="contactForm" action="submitPage.html">
         <h1>Contact Us</h1>
         <p>We would love to hear from you. Leave a message below 
             and we will get in touch with you shortly.</p>
 
         <!-- Name -->
         <div class="formContent">
-            <div class="name">
                 <label for="firstName">First Name:</label><br>
                 <input type="text" name="firstName-field" id="firstName"><br>
                 <label for="lastName">Last Name:</label><br>
                 <input type="text" name="lastnName-field" id="lastName"><br>
-            </div>
 
             <!-- Contact -->
-            <div class="contact">
                 <label for="email">E-mail:</label><br>
                 <input type="text" name="email-field" id="email"><br>
                 <label for="phone">Phone:</label><br>
                 <input type="text" name="phone" id="phone"><br>
-            </div>
+            
 
             <!-- Choices -->
-            <p>Contact me by:</p>
+            <p>Contact us as:</p>
             <div class="radio">
-                <label for="contactEmail">E-mail:</label><br>
+                <label for="contactEmail">Paricipant</label><br>
                 <input type="radio" name="contact" id="contactEmail" value="email"><br>
-                <label for="contactPhone">Phone:</label><br>
+                <label for="contactPhone"></label><br>
+                <input type="radio" name="contact" id="contactPhone" value="phone"><br>
+                <label for="contactPhone">Other</label><br>
                 <input type="radio" name="contact" id="contactPhone" value="phone"><br>
             </div>
             
-            <div class="choices">
-                <label for="subject">Subject:</label><br>
-                <select name="subject" id="subject">
-                    <option value="choice 1">Innovation Camp</option>
-                    <option value="choice 2">participant</option>
-                    <option value="choice 3">Other</option>
-                </select><br>
-            </div>
 
             <!-- Message -->
-            <div class="message">
                 <label for="message">Message:</label><br>
                 <textarea name="message-field" id="message" rows="10" cols="20"></textarea><br>
-            </div>
 
             <!-- Submit -->
             <input class="submit" type="submit" value="Submit">

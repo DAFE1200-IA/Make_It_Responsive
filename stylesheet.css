@@ -222,92 +222,111 @@ footer{
         }
     }
     
-    /*CONTENT CONTACT US PAGE*/
-    /* Mobile first */
-    .backgroundContact{
-        background-color: rgba(115, 176, 209, 1);
+/*CONTENT CONTACT US PAGE*/
+.backgroundContact{
+    background-color: rgba(115, 176, 209, 1);
     }
 
-    form {
-        background-color: white;
-        display: flexbox;
-        height: auto;
-        width: auto;
-        position: relative;
-        top: 5em;
-        margin: 1em;
-        padding: 1em;
-        border-radius: 5px;
+.contactForm {
+    background-color: whitesmoke;
+    display: flexbox;
+    height: auto;
+    width: auto;
+    position: relative;
+    top: 5em;
+    margin: 8em 1em;
+    margin-top: 0;
+    padding: 1em;
+    border-radius: 5px;
+    }
+    
+.contactForm h1 {
+    font-weight: 100;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--blue);
+    }
+    
+.contactForm p {
+    text-align: center;
+    font-size: 1em;
+    padding-bottom: 1em;
+    }
+    
+.formContent {
+    margin-bottom: 2em;
+    }
+    
+.formContent label{
+    position: relative;
+    top: 0em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;  
+    }
+        
+.formContent input[type=text]{
+    position: relative;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 0.4em;
+    width: 80%;
+    }
+    
+.formContent .textareaLabel {
+    position: relative;
+    top: 1em;
+    }
+        
+.formContent textarea {
+    position: relative;
+    top: 2em;
+    padding: 1.2em;
+    border: 1px solid #ccc;
+    border-radius: 0.4em;
+    width: 80%;
+    }
+    
+.formContent input[type=submit]{
+    position: relative;
+    top: 3em;
+    color: black;
+    padding: 0.7em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: white;
+    text-transform: uppercase;
+    }
+        
+.formContent input[type=submit]:hover {
+    background-color: var(--blue);
+    color: white;
     }
 
-    form h1 {
-        font-weight: 100;
-        color: rgb(50, 84, 114);
-    }
+/* SUBMIT PAGE */
+.submittedContent {
+    position: relative;
+    top: 7em;
+    margin: 1em;
+    border-radius: 5px;
+    padding: 0.9em;
+    text-align: center;
+    background-color: whitesmoke;
+}
 
-    form p {
-        text-align: left;
-    }
+.submittedContent h1 {
+    font-size: 1.2em;
+    font-weight: 100;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--blue);
+}
 
-    .formContent {
-        margin-bottom: 4em;
-    }
-
-    .formContent p {
-        position: relative;
-        bottom: 1em;
-    }
-
-    .formContent select {
-        margin: 1.3em 0em;
-    }
-
-    .formContent input {
-        margin: 1em 0em;  
-    }
-
-    .formContent textarea {
-        margin: 1em 0em;
-    }
-
-    .radio {
-        position: relative;
-        bottom: 1.5em;
-        display: inline-flex;
-    }
-
-    .radio label{
-        position: relative;
-        top: 0.5em;
-        margin-right: 0.6em;
-    }
-
-    .radio input {
-        margin-right: 2em;
-    }
-
-    .choices {
-        position: relative;
-        bottom: 1em;
-    }
-
-    .message
-
-    .submit {
-        position: relative;
-        left: 10em;       
-    }
-
-    /* SUBMIT PAGE */
-   .submittedContent {
-        position: relative;
-        top: 5em;
-        margin: 1em;
-        border: 1px solid black;
-        border-radius: 5px;
-        padding: 0.5em;
-        text-align: center;
-    }
+.submittedContent p {
+    font-size: 1em;
+}
 
 /* SCHEDULE PAGE */
     #container{
