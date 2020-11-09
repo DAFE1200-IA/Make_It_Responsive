@@ -301,7 +301,7 @@ footer{
 .formContent input[type=submit]{
     position: relative;
     top: 3em;
-    color: red;
+    color: black;
     padding: 0.8em;
     border: none;
     border-radius: 4px;
