@@ -408,14 +408,14 @@ footer{
     }
 
     .contactForm {
-        margin: 0 12em;  
+        margin: 0em 12em;
+        align-items: center;  
     }
 
     .formRadio {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         margin-bottom: 1em;
-    
     }
 
      /* Contact us submitted page desktop */
