@@ -194,6 +194,7 @@ footer{
           top: 5em;
           margin: 1em;
           padding: 1em;
+          text-align: center;
         }
         .generalText h1 {
           text-align: center;
@@ -201,7 +202,11 @@ footer{
           background-color: rgba(115, 176, 209, 0.8);
         }
         .generalText a{
-          color: rgba(6, 38, 54, 0.8);
+            color: rgb(6, 38, 54);
+            text-decoration: none;
+            color: rgb(6, 38, 54);
+            font-weight: 600;
+            font-size: 1em;
         }
 
         .generalText h2 {
