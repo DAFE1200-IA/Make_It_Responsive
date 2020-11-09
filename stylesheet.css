@@ -373,7 +373,7 @@ Found at 05 11 2020  https://stackoverflow.com/questions/6169666/how-to-resize-a
     #container{
     width: 80%;
     margin: auto;
-    padding-top: 80px;
+    padding-top: 50px;
     margin-bottom: 80px;
     }
     .box{
@@ -423,12 +423,11 @@ Found at 05 11 2020  https://stackoverflow.com/questions/6169666/how-to-resize-a
     .box_bot{
         background-color: white;
         text-align: center;
-        height: 60px;
+        padding: 20px;
     }
     .box_bot a{
         font-weight: bold;
         letter-spacing: 0.04em;
-        line-height: 60px;
         font-size: 17px;
         color: #062636;
         text-decoration: none;
@@ -451,6 +450,7 @@ Found at 05 11 2020  https://stackoverflow.com/questions/6169666/how-to-resize-a
         position: fixed;
         background-color: whitesmoke;
         padding-bottom: 5px;
+        padding-top: 30px;
     }
     ul#month_nav {
         padding-left: 0;
