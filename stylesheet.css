@@ -187,13 +187,18 @@ footer{
 
     /*CONTENT INNOVATION CAMP PAGE*/
     .campText{
-        background-color: white;
         height: auto;
         width: auto;
         top: 5em;
         margin: 1em;
         padding: 1em;
         text-align: center;
+    }
+
+    .campInfoText{
+        background-color: white;
+        padding: 1em;
+        margin-bottom: 1em;
     }
     
     .campText h1 {
@@ -235,13 +240,17 @@ Found at 05 11 2020  https://stackoverflow.com/questions/6169666/how-to-resize-a
     padding: 0;
 }
 
-.aboutText{
+.aboutTitleBox{
+    margin-top: 4em;
     background-color: white;
+}
+
+.aboutText{
     height: auto;
     width: auto;
     top: 5em;
     margin: 1em;
-    padding: 1em;
+    padding: 1.5em;
     text-align: center;
 }
 
@@ -254,6 +263,10 @@ Found at 05 11 2020  https://stackoverflow.com/questions/6169666/how-to-resize-a
 .aboutText h2 {
     text-align: center;
     color: rgba(50, 84, 114, 0.8);
+}
+
+.aboutText p{
+    padding: 1em;
 }
 
 .photo{
@@ -396,12 +409,6 @@ Found at 05 11 2020  https://stackoverflow.com/questions/6169666/how-to-resize-a
 }
 
 /* SCHEDULE PAGE */
-    #container{
-    width: 80%;
-    margin: auto;
-    padding-top: 80px;
-    margin-bottom: 80px;
-    }
     .box{
         width: 400px;
         /*background-color: #EEEEEE;*/
@@ -477,6 +484,7 @@ Found at 05 11 2020  https://stackoverflow.com/questions/6169666/how-to-resize-a
         position: fixed;
         background-color: whitesmoke;
         padding-bottom: 5px;
+        top: 4.5em;
     }
     ul#month_nav {
         padding-left: 0;
@@ -492,10 +500,12 @@ Found at 05 11 2020  https://stackoverflow.com/questions/6169666/how-to-resize-a
         font-size: 26px;
         padding-right: 30px;
     }
+
     .monthPos{
     position: relative;
     top:-140px;
     }
+
     .flex{
         display: flex;
         flex-direction: row;
@@ -533,7 +543,31 @@ Found at 05 11 2020  https://stackoverflow.com/questions/6169666/how-to-resize-a
         height: 30px;
     }
 
-    /*MAKE IT RESPONSIVE*/
+    /*SIGN-UP CONFIRMED*/
+    #signincontainer{
+        position: relative;
+        top: 7em;
+        margin: 18em 1em;
+        margin-top: 0em;
+        border-radius: 5px;
+        padding: 0.9em;
+        text-align: center;
+        background-color: whitesmoke;
+        }
+
+    #signincontainer h1{
+        font-size: 1.2em;
+        font-weight: 100;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+        color: rgb(50, 84, 114);
+    }
+
+    #signincontainer p{
+        font-size: 1em;
+    }
+
+        /*MAKE IT RESPONSIVE*/
     @media screen and (max-width: 300px){
         /*Navigation bar*/
         .logo{
@@ -633,6 +667,19 @@ Found at 05 11 2020  https://stackoverflow.com/questions/6169666/how-to-resize-a
        .logo{
            width: 15%;
        }
+
+       /*Innovation camp page*/
+       .campText{
+           margin-left: 5em;
+           margin-right: 5em;
+       }
+
+       /*About us page*/
+       .aboutTitleBox{
+        margin-left: 3em;
+        margin-right: 3em;
+       }
+
     }
     
     @media screen and (min-width: 1300px){
